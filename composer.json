@@ -1,10 +1,13 @@
 {
     "require": {
-        "symfony/symfony": "@stable",
-        "symfony/monolog-bundle": "@stable",
-        "vlucas/phpdotenv": "@stable"
+        "symfony/symfony":          "@stable",
+        "symfony/monolog-bundle":   "@stable",
+        "vlucas/phpdotenv":         "@stable"
     },
     "autoload": {
-        "psr-0": { "Acme": "src/" }
+        "psr-4": {
+            "AppBundle\\":          "src/AppBundle",
+            "Nosco\\Bundles\\":     "src/"
+        }
     }
 }
