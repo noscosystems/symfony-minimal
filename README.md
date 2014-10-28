@@ -1,9 +1,9 @@
 # Symfony Minimal Distribution
 
-This is the minimal Symfony distribution, forked from [Benjamin Eberlei](https://github.com/beberie/symfony-minimal-distribution).
+This is the minimal Symfony distribution, forked from [Benjamin Eberlei](https://github.com/beberlie/symfony-minimal-distribution).
 Please see his [blog post](http://whitewashing.de/2014/10/26/symfony_all_the_things_web.html "Symfony All The Things (Web)") explaining the reasoning for this approach.
 
-This is a back-to-basics Symfony application for educational purposes to explain to those not familiar with Symfony how one is laid out; the extras provided by Symfony's [standard edition application](https://github.com/symfony/framework-standard-edition) may cause unnecessary confusion.
+This is a back-to-basics Symfony application for educational purposes to explain (to those not familiar with Symfony) how one is laid out; the extras provided by Symfony's [standard edition application](https://github.com/symfony/framework-standard-edition) may cause unnecessary confusion. It is recommended that you get comfortable with this before moving onto the standard edition.
 
 ## Contents
 
