@@ -7,7 +7,7 @@ This is a back-to-basics Symfony application for educational purposes to explain
 
 ## Contents
 
-It only contains the following bundles:
+It only contains the following bundles (other than the application bundle):
 
 - FrameworkBundle
 - MonologBundle
@@ -22,6 +22,14 @@ SYMFONY_DEBUG=1
 SYMFONY__SECRET=abcdefg
 SYMFONY__MONOLOG_ACTION_LEVEL=debug
 ```
+
+## Setup
+
+- Clone the repository with `git clone git@github.com:noscosystems/symfony-minimal.git`.
+- Install dependencies with `composer install`.
+- Setup the `.env` file described above in the root directory of the project.
+- It works! Install assets (CSS, images) with `php app/console assets:install public` to make the error pages look nice,
+  you'll see them a lot.
 
 ## Changes
 
