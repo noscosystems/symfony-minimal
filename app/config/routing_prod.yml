@@ -1,4 +1,4 @@
 hello_world:
     pattern: /hello/{name}
     defaults:
-        _controller: "AcmeHelloBundle:Default:hello"
+        _controller: "AppBundle:Default:hello"
