@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf8" />
+        <title>{% block title %}Minimal Symfony{% endblock %}</title>
+        {% block stylesheets %}
+            {# If we were using the Assetic bundle, we could use Less stylesheets which automatically get compiled, minified, and combined into one stylesheet. #}
+            {# stylesheets  '@AppBundle/Resources/public/less/custom_bootstrap_variables.less'
+                            '%kernal.root_dir%/../vendor/twbs/bootstrap/less/bootstrap.less'
+                            '@AppBundle/Resources/public/less/main.less'
+            %}
+                <link href="{{ asset_url }}" media="all" type="text/css" rel="stylesheet" />
+            {% endstylesheets #}
+        {% endblock %}
+
+    </head>
+
+    <body>
+        <div id="wrapper">
+            {% block body %}{% endblock %}
+        </div>
+        {% block javascripts %}
+            {# Same goes for all Javascript files; through Assetic, Javascript gets minified by Google's Closure compiler, you can even write your Javascript in Coffeescript, or Iced Coffeescript! AWESOMESAUCE! #}
+            {# javascripts '/public/main.js' %}
+                <script type="text/javascript" src="{{ asset_url }}"></script>
+            {% endjavascripts #}
+        {% endblock %}
+    </body>
+
+</html>
