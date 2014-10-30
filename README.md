@@ -25,11 +25,32 @@ SYMFONY__MONOLOG_ACTION_LEVEL=debug
 
 ## Setup
 
-- Clone the repository with `git clone git@github.com:noscosystems/symfony-minimal.git`.
-- Install dependencies with `composer install`.
-- Setup the `.env` file described above in the root directory of the project.
-- It works! Install assets (CSS, images) with `php app/console assets:install public` to make the error pages look nice,
-  you'll see them a lot.
+- Clone the repository with.
+- Install dependencies via Composer.
+- Setup the environmental variables file described above in the root directory of the project.
+- It works! Install assets (CSS, images) with the console application to make the error pages look nice, you'll see them a lot.
+
+```bash
+$ git clone git@github.com:noscosystems/symfony-minimal.git
+    Cloning into 'symfony-minimal'...
+    Receiving objects: 100% (93/93), 13.74 KiB | 0 bytes/s, done.
+    Resolving deltas: 100% (31/31), done.
+    Checking connectivity... done.
+
+$ cd symfony-minimal
+
+$ composer install
+    Loading composer repositories with package information
+    Installing dependencies (including require-dev)
+    Writing lock file
+    Generating autoload files
+
+$ nano .env
+
+$ php app/console assets:install ./public
+    Installing assets as hard copies
+    Installing assets for Symfony\Bundle\FrameworkBundle into public/bundles/framework
+```
 
 ## Changes
 
