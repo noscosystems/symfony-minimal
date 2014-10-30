@@ -1,10 +1,12 @@
 _wdt:
     resource: "@WebProfilerBundle/Resources/config/routing/wdt.xml"
     prefix:   /_wdt
-
 _profiler:
     resource: "@WebProfilerBundle/Resources/config/routing/profiler.xml"
     prefix:   /_profiler
 
+# Now we have defined the routing rules for the web debug toolbar and profiler, import the routing rules for the
+# application. This is because the rules for the development environment (routing_dev) is basically the rules for the
+# production environment (routing_prod) with the addition of the toolbar and profiler.
 _main:
     resource: routing_prod.yml
