@@ -23,6 +23,15 @@ SYMFONY__SECRET=abcdefg
 SYMFONY__MONOLOG_ACTION_LEVEL=debug
 ```
 
+## Directory Structure
+
+The directory structure of a Symfony application is different to projects you've previously worked on.
+
+- `app/` contains application-specific configuration (system config, routing), resources (views, assets), and volatile files (cache, logs).
+- `src/` contains PHP source-code. Think controllers.
+- `public/` is the webroot directory, it's just `public_html/` shortened. This is called `web/` in most Symfony installations.
+- `vendor/` is where Composer installs third-party code. This directory should never be committed to version control (Git).
+
 ## Setup
 
 - Clone the repository with.
