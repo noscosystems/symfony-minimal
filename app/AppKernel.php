@@ -58,4 +58,26 @@
             }
         }
 
+        /**
+         * Get: Cache Directory
+         *
+         * @access public
+         * @return string
+         */
+        public function getCacheDir()
+        {
+            return $this->rootDir . '/../var/cache/' . $this->environment;
+        }
+
+        /**
+         * Get: Cache Directory
+         *
+         * @access public
+         * @return string
+         */
+        public function getLogDir()
+        {
+            return $this->rootDir . '/../var/logs';
+        }
+
     }

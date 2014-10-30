@@ -9,5 +9,8 @@
             "AppBundle\\":          "src/AppBundle",
             "Nosco\\Bundles\\":     "src/"
         }
+    },
+    "config": {
+        "bin-dir":                              "bin"
     }
 }
