@@ -1,4 +1,22 @@
+{#
+    When you reference another view (Twig template), it takes the form "bundle:controller:view".
+    Views are located in "Resources/views". It will look in the bundle directory for this, or the global "app/"
+        directory if one is not specified.
+    Make a habit of storing them in the bundle itself, because bundle views can be overriden with views in the app
+        directory - just like views in the "themes/" directory can be overriden by views in the "views/"" directory with
+        the Yii framework.
+    The controller does not actually correspond to any controller, just the name of of the view sub-directory. Again, if
+        none is specified then the view will be located directly in the view folder.
+    And finally the name of the view file. This is the full filename, the convention is "viewName.outputFormat.twig".
+#}
 {% extends '::index.html.twig' %}
+
+{#
+    A *really* quick overview of Twig templates (you still need to read the documentation):
+    - {# : Ignore something (comments).
+    - {% : Do something (commands).
+    - {{ : Say something (statements).
+#}
 
 {% block body %}
     <p>Hello {{ name }}!</p>
