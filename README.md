@@ -27,10 +27,16 @@ SYMFONY__MONOLOG_ACTION_LEVEL=debug
 
 The directory structure of a Symfony application is different to projects you've previously worked on.
 
-- `app/` contains application-specific configuration (system config, routing), resources (views, assets), and volatile files (cache, logs).
+- `app/` contains application-specific configuration (system config, routing), resources (views, assets).
 - `src/` contains PHP source-code. Think controllers.
 - `public/` is the webroot directory, it's just `public_html/` shortened. This is called `web/` in most Symfony installations.
-- `vendor/` is where Composer installs third-party code. This directory should never be committed to version control (Git).
+
+The following directories are also part of the project, but the contents of them should never be committed to version
+control (Git). All the files in these directories should never be edited.
+
+- `bin/` is where both Symfony and Composer install executable scripts to be used on the command line.
+- `var/` is where volatile files (cache, logs) are stored. These files are generated and constantly changing.
+- `vendor/` is where Composer installs third-party code.
 
 ## Setup
 
