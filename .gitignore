@@ -1,6 +1,5 @@
 .env
 /vendor/
-/composer.lock
 /composer.phar
 /app/cache/
 /app/logs/

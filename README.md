@@ -34,8 +34,8 @@ The directory structure of a Symfony application is different to projects you've
 
 ## Setup
 
-- Clone the repository with.
-- Install dependencies via Composer.
+- Clone the repository with Git.
+- Install dependencies via Composer (see the **Changes** section below for using Composer properly).
 - Setup the environmental variables file described above in the root directory of the project.
 - It works! Install assets (CSS, images) with the console application to make the error pages look nice, you'll see them a lot.
 
@@ -67,3 +67,6 @@ Changes made to the original minimal distribution by Benjamin include:
 
 - Rename the bundle containing the application logic to `AppBundle`, as suggested by Symfony's [best practices](http://symfony.com/doc/current/best_practices/index.html).
 - More diverse examples of Twig templates (as no-one has used Twig in previous frameworks).
+- Unlike previous projects, the `composer.lock` file is committed to the repository, EngineYard wrote a
+  [blog post explaining why](https://blog.engineyard.com/2014/composer-its-all-about-the-lock-file "Composer: It’s All About the Lock File").
+  So from now on run `composer install` all the time instead of `composer update`.
