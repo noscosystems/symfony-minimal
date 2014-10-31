@@ -50,7 +50,11 @@
             // toolbar/profiler. Specifically, we are saying that we want to enable it because we already loaded it
             // above in the registerBundles() method.
             if(in_array($this->getEnvironment(), ['dev', 'test'])) {
-                $loader->load(function ($container) {
+                // We could put this in a separate file, like we have split routing into "routing_dev" and
+                // "routing_prod", as the standard edition does, but whole new file compared to a couple of lines? Might
+                // as well keep it here until it needs to get more complicated, plus it shows that you can modify the
+                // configuration on-the-fly if need be.
+                $loader->load(function($container) {
                     $container->loadFromExtension('web_profiler', [
                         'toolbar' => true,
                     ]);
