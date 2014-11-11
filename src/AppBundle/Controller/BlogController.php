@@ -2,14 +2,16 @@
 
     /**
      * Annotations Example
+     * ===================
      *
      * The purpose of this file is to show off Symfony's controller/action annotations. These are not actually available
      * in the minimal distribution so the controller won't work as expected, but are available in the standard
      * distribution when Sensio's FrameworkExtraBundle is enabled in the AppKernel.
      *
-     * My personal preference, however, is to *not* use the @Route annotation. Even though it is recommended by
-     * Symfony's Best Practices eBook, I believe routing should treated the same as configuration; as the URL is visible
-     * to the end-user, it should be grouped with UI and UX design and decoupled from back-end business logic.
+     * My personal preference, however, is to *not* use the @Route (and therefore @Method) annotation. Even though it is
+     * recommended by Symfony's Best Practices eBook, I believe routing should treated the same as configuration; as the
+     * URL is visible to the end-user, it should be grouped with UI and UX design and decoupled from back-end business
+     * logic.
      */
 
     namespace AppBundle\Controller;
