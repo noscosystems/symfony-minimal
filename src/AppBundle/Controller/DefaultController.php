@@ -16,10 +16,9 @@
          */
         public function helloAction($name)
         {
-            return $this->render(
-                'AppBundle:Default:hello.html.twig',
-                array('name' => $name)
-            );
+            return $this->render('AppBundle:Default:hello.html.twig', [
+                'name' => $name,
+            ]);
         }
 
     }
