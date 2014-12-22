@@ -13,7 +13,7 @@ monolog:
     handlers:
         main:
             type:         fingers_crossed
-            action_level: %monolog_action_level%
+            action_level: %monolog.action_level%
             handler:      nested
         nested:
             type:  stream

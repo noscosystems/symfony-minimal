@@ -20,8 +20,13 @@ It only contains one configuration file at `app/config/config.yml` that is param
 SYMFONY_ENV=dev
 SYMFONY_DEBUG=1
 SYMFONY__SECRET=abcdefg
-SYMFONY__MONOLOG_ACTION_LEVEL=debug
+SYMFONY__MONOLOG__ACTION_LEVEL=debug
 ```
+
+> This approach uses Symfony's [external configuration parameter support](http://symfony.com/doc/current/cookbook/configuration/external_parameters.html)
+> which basically means that Symfony will grab any environment variable prefixed with `SYMFONY__` and set it as a parameter in the service container; after
+> removing the prefix, lowercasing the variable name, and replacing double underscores with dots. For example, the environmental variable
+> `SYMFONY__MONOLOG__ACCESS_LEVEL` becomes `monolog.access_level`.
 
 ## Directory Structure
 
